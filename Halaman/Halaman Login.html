@@ -138,20 +138,20 @@
       
       <script>
         function handleLogin(event) {
-          event.preventDefault(); // Mencegah reload halaman
+          event.preventDefault(); 
     
-          // Username dan password statis
+   
           const validUsername = "admin";
           const validPassword = "12345";
     
-          // Ambil nilai dari input form
+
           const username = document.getElementById("username").value;
           const password = document.getElementById("password").value;
     
-          // Cek validasi
+
           if (username === validUsername && password === validPassword) {
             alert("Login Berhasil!");
-            window.location.href = "Halaman Menu Utama.html"; // Halaman tujuan setelah login berhasil
+            window.location.href = "Halaman Menu Utama.html"; 
           } else {
             alert("Username atau Password salah!");
           }
